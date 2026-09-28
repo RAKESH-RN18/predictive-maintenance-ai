@@ -1,0 +1,4 @@
+model,threshold,test_cost,accuracy,precision,recall,f1,roc_auc,pr_auc
+Logistic Regression,0.32,10740,0.9623,0.2941,0.9,0.4433,0.939,0.7095
+Random Forest,0.06,4900,0.9673,0.3349,0.9733,0.4983,0.9919,0.8252
+XGBoost,0.07,4900,0.9837,0.5053,0.9533,0.6605,0.9953,0.8938

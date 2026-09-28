@@ -1,0 +1,186 @@
+{
+  "best_model": "xgboost",
+  "results": {
+    "logistic_regression": {
+      "accuracy": 0.907,
+      "precision_macro": 0.9068135893119628,
+      "recall_macro": 0.8967302420188864,
+      "f1_macro": 0.901646693685645
+    },
+    "random_forest": {
+      "accuracy": 0.9096666666666666,
+      "precision_macro": 0.886629266868114,
+      "recall_macro": 0.9123747454984464,
+      "f1_macro": 0.898517509153089
+    },
+    "xgboost": {
+      "accuracy": 0.9276666666666666,
+      "precision_macro": 0.9265479519269734,
+      "recall_macro": 0.9095558038760152,
+      "f1_macro": 0.9176979970764229
+    }
+  },
+  "classification_reports": {
+    "logistic_regression": {
+      "NORMAL": {
+        "precision": 0.8879310344827587,
+        "recall": 0.871825876662636,
+        "f1-score": 0.8798047589993899,
+        "support": 827.0
+      },
+      "WARNING": {
+        "precision": 0.9126984126984127,
+        "recall": 0.9279538904899135,
+        "f1-score": 0.9202629322663618,
+        "support": 1735.0
+      },
+      "CRITICAL": {
+        "precision": 0.9198113207547169,
+        "recall": 0.8904109589041096,
+        "f1-score": 0.9048723897911833,
+        "support": 438.0
+      },
+      "accuracy": 0.907,
+      "macro avg": {
+        "precision": 0.9068135893119628,
+        "recall": 0.8967302420188864,
+        "f1-score": 0.901646693685645,
+        "support": 3000.0
+      },
+      "weighted avg": {
+        "precision": 0.9069093566798512,
+        "recall": 0.907,
+        "f1-score": 0.9068629433010571,
+        "support": 3000.0
+      }
+    },
+    "random_forest": {
+      "NORMAL": {
+        "precision": 0.9025821596244131,
+        "recall": 0.9298669891172914,
+        "f1-score": 0.9160214413341274,
+        "support": 827.0
+      },
+      "WARNING": {
+        "precision": 0.9404332129963899,
+        "recall": 0.9008645533141211,
+        "f1-score": 0.9202237268177804,
+        "support": 1735.0
+      },
+      "CRITICAL": {
+        "precision": 0.8168724279835391,
+        "recall": 0.906392694063927,
+        "f1-score": 0.8593073593073594,
+        "support": 438.0
+      },
+      "accuracy": 0.9096666666666666,
+      "macro avg": {
+        "precision": 0.886629266868114,
+        "recall": 0.9123747454984464,
+        "f1-score": 0.898517509153089,
+        "support": 3000.0
+      },
+      "weighted avg": {
+        "precision": 0.9119590646716388,
+        "recall": 0.9096666666666666,
+        "f1-score": 0.9101715071295985,
+        "support": 3000.0
+      }
+    },
+    "xgboost": {
+      "NORMAL": {
+        "precision": 0.9355638166047088,
+        "recall": 0.9129383313180169,
+        "f1-score": 0.9241126070991432,
+        "support": 827.0
+      },
+      "WARNING": {
+        "precision": 0.9264044943820224,
+        "recall": 0.9504322766570605,
+        "f1-score": 0.9382645803698435,
+        "support": 1735.0
+      },
+      "CRITICAL": {
+        "precision": 0.9176755447941889,
+        "recall": 0.865296803652968,
+        "f1-score": 0.8907168037602821,
+        "support": 438.0
+      },
+      "accuracy": 0.9276666666666666,
+      "macro avg": {
+        "precision": 0.9265479519269734,
+        "recall": 0.9095558038760152,
+        "f1-score": 0.9176979970764229,
+        "support": 3000.0
+      },
+      "weighted avg": {
+        "precision": 0.9276549875682525,
+        "recall": 0.9276666666666666,
+        "f1-score": 0.9274213776865579,
+        "support": 3000.0
+      }
+    }
+  },
+  "confusion_matrices": {
+    "logistic_regression": [
+      [
+        721,
+        106,
+        0
+      ],
+      [
+        91,
+        1610,
+        34
+      ],
+      [
+        0,
+        48,
+        390
+      ]
+    ],
+    "random_forest": [
+      [
+        769,
+        58,
+        0
+      ],
+      [
+        83,
+        1563,
+        89
+      ],
+      [
+        0,
+        41,
+        397
+      ]
+    ],
+    "xgboost": [
+      [
+        755,
+        72,
+        0
+      ],
+      [
+        52,
+        1649,
+        34
+      ],
+      [
+        0,
+        59,
+        379
+      ]
+    ]
+  },
+  "feature_importance": {
+    "temperature": 0.3240760564804077,
+    "vibration": 0.3190860152244568,
+    "pressure": 0.09316667169332504,
+    "rpm": 0.08997488766908646,
+    "current": 0.08188823610544205,
+    "operating_hours": 0.06950251758098602,
+    "voltage": 0.022305695340037346
+  }
+}

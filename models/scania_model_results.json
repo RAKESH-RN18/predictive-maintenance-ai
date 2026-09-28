@@ -1,0 +1,113 @@
+{
+    "dataset": "APS Failure at Scania Trucks",
+    "source": "UCI Machine Learning Repository",
+    "uci_dataset_id": 421,
+    "samples": 60000,
+    "features": 170,
+    "normal_samples": 59000,
+    "failure_samples": 1000,
+    "failure_rate": 0.016667,
+    "best_model": "XGBoost",
+    "selected_threshold": 0.07,
+    "model_selection_metric": "validation_total_cost",
+    "false_positive_cost": 10,
+    "false_negative_cost": 500,
+    "models": {
+        "Logistic Regression": {
+            "threshold": 0.32,
+            "validation_cost": 10100,
+            "validation_accuracy": 0.964,
+            "validation_precision": 0.3049,
+            "validation_recall": 0.9067,
+            "validation_f1": 0.4564,
+            "validation_roc_auc": 0.9401,
+            "validation_pr_auc": 0.6855,
+            "test_cost": 10740,
+            "test_accuracy": 0.9623,
+            "test_precision": 0.2941,
+            "test_recall": 0.9,
+            "test_f1": 0.4433,
+            "test_roc_auc": 0.939,
+            "test_pr_auc": 0.7095,
+            "false_positives": 324,
+            "false_negatives": 15,
+            "true_positives": 135,
+            "true_negatives": 8526,
+            "confusion_matrix": [
+                [
+                    8526,
+                    324
+                ],
+                [
+                    15,
+                    135
+                ]
+            ],
+            "classification_report": "              precision    recall  f1-score   support\n\n      Normal       1.00      0.96      0.98      8850\n     Failure       0.29      0.90      0.44       150\n\n    accuracy                           0.96      9000\n   macro avg       0.65      0.93      0.71      9000\nweighted avg       0.99      0.96      0.97      9000\n"
+        },
+        "Random Forest": {
+            "threshold": 0.06,
+            "validation_cost": 8390,
+            "validation_accuracy": 0.9667,
+            "validation_precision": 0.3248,
+            "validation_recall": 0.9267,
+            "validation_f1": 0.481,
+            "validation_roc_auc": 0.9825,
+            "validation_pr_auc": 0.8263,
+            "test_cost": 4900,
+            "test_accuracy": 0.9673,
+            "test_precision": 0.3349,
+            "test_recall": 0.9733,
+            "test_f1": 0.4983,
+            "test_roc_auc": 0.9919,
+            "test_pr_auc": 0.8252,
+            "false_positives": 290,
+            "false_negatives": 4,
+            "true_positives": 146,
+            "true_negatives": 8560,
+            "confusion_matrix": [
+                [
+                    8560,
+                    290
+                ],
+                [
+                    4,
+                    146
+                ]
+            ],
+            "classification_report": "              precision    recall  f1-score   support\n\n      Normal       1.00      0.97      0.98      8850\n     Failure       0.33      0.97      0.50       150\n\n    accuracy                           0.97      9000\n   macro avg       0.67      0.97      0.74      9000\nweighted avg       0.99      0.97      0.98      9000\n"
+        },
+        "XGBoost": {
+            "threshold": 0.07,
+            "validation_cost": 7300,
+            "validation_accuracy": 0.9842,
+            "validation_precision": 0.5149,
+            "validation_recall": 0.92,
+            "validation_f1": 0.6603,
+            "validation_roc_auc": 0.985,
+            "validation_pr_auc": 0.8867,
+            "test_cost": 4900,
+            "test_accuracy": 0.9837,
+            "test_precision": 0.5053,
+            "test_recall": 0.9533,
+            "test_f1": 0.6605,
+            "test_roc_auc": 0.9953,
+            "test_pr_auc": 0.8938,
+            "false_positives": 140,
+            "false_negatives": 7,
+            "true_positives": 143,
+            "true_negatives": 8710,
+            "confusion_matrix": [
+                [
+                    8710,
+                    140
+                ],
+                [
+                    7,
+                    143
+                ]
+            ],
+            "classification_report": "              precision    recall  f1-score   support\n\n      Normal       1.00      0.98      0.99      8850\n     Failure       0.51      0.95      0.66       150\n\n    accuracy                           0.98      9000\n   macro avg       0.75      0.97      0.83      9000\nweighted avg       0.99      0.98      0.99      9000\n"
+        }
+    }
+}
